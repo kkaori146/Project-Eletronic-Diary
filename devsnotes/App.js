@@ -5,6 +5,8 @@ import { NavigationContainer} from '@react-navigation/native';
 
 import { store, persistor } from './src/store';
 
+import MainStack from './src/stacks/MainStack';
+
 export default () => {
   return(
     <Provider store={store}>
@@ -13,7 +15,7 @@ export default () => {
       persistor={persistor}
       >
         <NavigationContainer>
-          
+          <MainStack />
         </NavigationContainer>
 
       </PersistGate>
